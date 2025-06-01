@@ -1,12 +1,12 @@
 # 🛠️ Products API
 
-Este proyecto es una **API RESTful** construida con **Node.js**, **Express**, **Sequelize**, **MySQL** y **Redis**. Permite gestionar productos, con persistencia en base de datos relacional y uso de cache para mejorar el rendimiento. Es la resolución a la actividad **Interacción con Bases de Datos en Node.js** de la asignatura Desarrollo Avanzado de Backend y APIs del Máster de Desarrollo Web de la UEM.
+Este proyecto es una **API RESTful** construida con **Node.js**, **Express**, **Sequelize**, **MySQL** y **Redis**. Permite gestionar productos con persistencia en base de datos relacional y uso de cache para mejorar el rendimiento. Es la resolución a la actividad **Interacción con Bases de Datos en Node.js** de la asignatura Desarrollo Avanzado de Backend y APIs del Máster de Desarrollo Web de la UEM.
 
 ## 🚀 Características
 
 - CRUD completo para Productos
 - Base de datos MySQL usando Sequelize ORM
-- Caché con Redis en endpoints críticos (`GET /productos` y `GET /productos/:id`)
+- Caché con Redis en endpoints críticos (`GET /products` y `GET /products/:id`)
 - Invalidación automática del cache tras creación, actualización o eliminación
 - Código estructurado y con manejo robusto de errores
 
@@ -83,23 +83,23 @@ bbdd-node/
 
 ## 🧪 Endpoints disponibles
 
-### `GET /productos`
+### `GET /products`
 
 Devuelve todos los productos (usando Redis como caché por 30 minutos).
 
-### `GET /productos/:id`
+### `GET /products/:id`
 
 Devuelve un solo producto por ID (también cacheado).
 
-### `POST /productos`
+### `POST /products`
 
 Crea un nuevo producto. Invalida la caché general.
 
-### `PUT /productos/:id`
+### `PUT /products/:id`
 
 Actualiza un producto. Actualiza la caché del recurso y la lista.
 
-### `DELETE /productos/:id`
+### `DELETE /products/:id`
 
 Elimina un producto. Invalida la caché asociada.
 
