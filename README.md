@@ -1,4 +1,4 @@
-# 🛠️ BBDD Node API
+# 🛠️ Products API
 
 Este proyecto es una **API RESTful** construida con **Node.js**, **Express**, **Sequelize**, **MySQL** y **Redis**. Permite gestionar productos, con persistencia en base de datos relacional y uso de cache para mejorar el rendimiento. Es la resolución a la actividad **Interacción con Bases de Datos en Node.js** de la asignatura Desarrollo Avanzado de Backend y APIs del Máster de Desarrollo Web de la UEM.
 
